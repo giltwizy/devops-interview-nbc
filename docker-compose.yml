@@ -7,8 +7,8 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=dev
       - SPRING_DATASOURCE_URL=jdbc:mysql://my-mysql-db:3306/nbc-transactions?useSSL=false&allowPublicKeyRetrieval=true
-      - SPRING_DATASOURCE_USERNAME=nbcuser
-      - SPRING_DATASOURCE_PASSWORD=nbcpass
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=rootpass
     volumes:
       - /var/log/nbc_devops/20250815:/app/logs
     networks:
