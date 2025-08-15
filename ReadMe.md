@@ -108,7 +108,7 @@ src
    ```bash
    mvn spring-boot:run
    ```
-   The application will start on `http://localhost:8080`.
+   The application will start on `http://localhost:8765`.
 
 ## Usage
 - **Endpoint**: `POST /nbc-bank/devops/v1/transactions`
@@ -152,6 +152,11 @@ src
 - The `reference` field in the transactions table is unique to prevent duplicate transactions.
 - Ensure your MySQL server is running before starting the application.
 - The application logs SQL queries for debugging (configured in `application.properties`).
+
+## Deployment and Rollback Plan
+- Copy the docker-compose.yml file to your environment
+- run the the docker-compose 'docker compose up -d'
+- Monitor the services if they are both running (Web application and Database). If anything odd is happening such that services aren't running you can rollback by docker-compose down command and reach out to the developer
 
 ## Troubleshooting
 - **Database Connection Issues**: Verify MySQL is running and credentials in `application.properties` are correct.
