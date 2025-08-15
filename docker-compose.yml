@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+  nbc-devops-webservice:
+    image: nbc_devops_webservice:v1.0.0
+    ports:
+      - "8765:8765"
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+    volumes:
+      - /var/log/nbc_devops/20250815:/app/logs
+
+  mysql:
+    image: mysql:8.0
+    container_name: my-mysql-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: nbc-transactions
+      MYSQL_USER: nbcuser
+      MYSQL_PASSWORD: nbcpass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  nbc-devops-webservice:
+  mysql_data:
