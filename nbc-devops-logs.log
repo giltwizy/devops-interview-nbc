@@ -1058,3 +1058,39 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'8.8.8.8' (using
 2025-08-15T13:46:09.340+03:00  WARN 99334 --- [nbc-transactions] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2025-08-15T13:46:09.471+03:00  INFO 99334 --- [nbc-transactions] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8766 (http) with context path '/'
 2025-08-15T13:46:09.474+03:00  INFO 99334 --- [nbc-transactions] [main] c.c.n.NbcTransactionsApplication         : Started NbcTransactionsApplication in 1.38 seconds (process running for 1.589)
+2025-08-15T13:47:32.208+03:00  INFO 99334 --- [nbc-transactions] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T13:47:32.211+03:00  INFO 99334 --- [nbc-transactions] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T13:47:32.215+03:00  INFO 99334 --- [nbc-transactions] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T13:47:32.216+03:00  INFO 99334 --- [nbc-transactions] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-15T13:47:32.221+03:00  INFO 99334 --- [nbc-transactions] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-15T13:47:34.089+03:00  INFO 99849 --- [nbc-transactions] [main] c.c.n.NbcTransactionsApplication         : Starting NbcTransactionsApplication using Java 22.0.2 with PID 99849 (/Users/giltonteti/Desktop/devops-interview-nbc/target/classes started by giltonteti in /Users/giltonteti/Desktop/devops-interview-nbc)
+2025-08-15T13:47:34.089+03:00  INFO 99849 --- [nbc-transactions] [main] c.c.n.NbcTransactionsApplication         : The following 1 profile is active: "local"
+2025-08-15T13:47:34.283+03:00  INFO 99849 --- [nbc-transactions] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-15T13:47:34.298+03:00  INFO 99849 --- [nbc-transactions] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2025-08-15T13:47:34.420+03:00  INFO 99849 --- [nbc-transactions] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8766 (http)
+2025-08-15T13:47:34.425+03:00  INFO 99849 --- [nbc-transactions] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-15T13:47:34.425+03:00  INFO 99849 --- [nbc-transactions] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-15T13:47:34.438+03:00  INFO 99849 --- [nbc-transactions] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-15T13:47:34.438+03:00  INFO 99849 --- [nbc-transactions] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 337 ms
+2025-08-15T13:47:34.484+03:00  INFO 99849 --- [nbc-transactions] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-15T13:47:34.501+03:00  INFO 99849 --- [nbc-transactions] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-15T13:47:34.513+03:00  INFO 99849 --- [nbc-transactions] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-15T13:47:34.603+03:00  INFO 99849 --- [nbc-transactions] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-15T13:47:34.611+03:00  INFO 99849 --- [nbc-transactions] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-15T13:47:34.734+03:00  INFO 99849 --- [nbc-transactions] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67dc6b48
+2025-08-15T13:47:34.734+03:00  INFO 99849 --- [nbc-transactions] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-15T13:47:34.755+03:00  WARN 99849 --- [nbc-transactions] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-15T13:47:34.756+03:00  WARN 99849 --- [nbc-transactions] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-15T13:47:34.761+03:00  INFO 99849 --- [nbc-transactions] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-15T13:47:35.012+03:00  INFO 99849 --- [nbc-transactions] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T13:47:35.042+03:00  INFO 99849 --- [nbc-transactions] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T13:47:35.146+03:00  WARN 99849 --- [nbc-transactions] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T13:47:35.263+03:00  INFO 99849 --- [nbc-transactions] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8766 (http) with context path '/'
+2025-08-15T13:47:35.266+03:00  INFO 99849 --- [nbc-transactions] [main] c.c.n.NbcTransactionsApplication         : Started NbcTransactionsApplication in 1.336 seconds (process running for 1.54)

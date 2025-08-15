@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.crdb</groupId>
-    <artifactId>crdb-transactions</artifactId>
+    <artifactId>nbc-transactions</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>crdb-transactions</name>
     <description>crdb-transactions</description>
