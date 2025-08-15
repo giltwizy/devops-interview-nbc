@@ -1,8 +1,8 @@
-package com.crdb.crdbtransactions.controller;
+package com.crdb.nbctransactions.controller;
 
-import com.crdb.crdbtransactions.dto.TransactionRequest;
-import com.crdb.crdbtransactions.dto.TransactionResponse;
-import com.crdb.crdbtransactions.service.TransactionService;
+import com.crdb.nbctransactions.dto.TransactionRequest;
+import com.crdb.nbctransactions.dto.TransactionResponse;
+import com.crdb.nbctransactions.service.TransactionService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package com.crdb.crdbtransactions.dto;
+package com.crdb.nbctransactions.dto;
 
 import lombok.Data;
 

@@ -1,13 +1,13 @@
-package com.crdb.crdbtransactions;
+package com.crdb.nbctransactions;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CrdbTransactionsApplication {
+public class NbcTransactionsApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CrdbTransactionsApplication.class, args);
+        SpringApplication.run(NbcTransactionsApplication.class, args);
     }
 
 }
