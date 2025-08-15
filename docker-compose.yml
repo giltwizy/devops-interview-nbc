@@ -6,8 +6,15 @@ services:
       - "8765:8765"
     environment:
       - SPRING_PROFILES_ACTIVE=dev
+      - SPRING_DATASOURCE_URL=jdbc:mysql://my-mysql-db:3306/nbc-transactions?useSSL=false&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=nbcuser
+      - SPRING_DATASOURCE_PASSWORD=nbcpass
     volumes:
       - /var/log/nbc_devops/20250815:/app/logs
+    networks:
+      - nbc-network
+    depends_on:
+      - mysql
 
   mysql:
     image: mysql:8.0
@@ -22,7 +29,12 @@ services:
       - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
+    networks:
+      - nbc-network
+
+networks:
+  nbc-network:
+    driver: bridge
 
 volumes:
-  nbc-devops-webservice:
   mysql_data:
