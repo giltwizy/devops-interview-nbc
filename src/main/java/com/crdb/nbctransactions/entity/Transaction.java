@@ -14,16 +14,7 @@ public class Transaction {
     private Long id;
     public String service;
     public String name;
-
-    @NotNull(message = "Amount can not be NULL")
-    @NotEmpty(message = "Amount can not be Empty")
     public String amount;
-
-    @NotNull(message = "Account can not be NULL")
-    @NotEmpty(message = "Account can not be Empty")
     public String account;
-
-    @NotNull(message = "reference can not be NULL")
-    @NotEmpty(message = "reference can not be Empty")
     public String reference;
 }
