@@ -34,3 +34,111 @@
 2025-08-15T11:01:15.436+03:00  INFO 70950 --- [crdb-transactions] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-08-15T11:01:15.437+03:00  INFO 70950 --- [crdb-transactions] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-08-15T11:01:15.441+03:00  INFO 70950 --- [crdb-transactions] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-15T11:35:31.684+03:00  INFO 77666 --- [crdb-transactions] [main] c.c.c.CrdbTransactionsApplication        : Starting CrdbTransactionsApplication using Java 17.0.16 with PID 77666 (/Users/giltonteti/Documents/crdb-transactions/target/classes started by giltonteti in /Users/giltonteti/Documents/crdb-transactions)
+2025-08-15T11:35:31.685+03:00  INFO 77666 --- [crdb-transactions] [main] c.c.c.CrdbTransactionsApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T11:35:31.873+03:00  INFO 77666 --- [crdb-transactions] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-15T11:35:31.888+03:00  INFO 77666 --- [crdb-transactions] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2025-08-15T11:35:32.009+03:00  INFO 77666 --- [crdb-transactions] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8765 (http)
+2025-08-15T11:35:32.013+03:00  INFO 77666 --- [crdb-transactions] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-15T11:35:32.013+03:00  INFO 77666 --- [crdb-transactions] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-15T11:35:32.029+03:00  INFO 77666 --- [crdb-transactions] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-15T11:35:32.029+03:00  INFO 77666 --- [crdb-transactions] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 331 ms
+2025-08-15T11:35:32.088+03:00  INFO 77666 --- [crdb-transactions] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-15T11:35:32.112+03:00  INFO 77666 --- [crdb-transactions] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-15T11:35:32.122+03:00  INFO 77666 --- [crdb-transactions] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-15T11:35:32.198+03:00  INFO 77666 --- [crdb-transactions] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-15T11:35:32.206+03:00  INFO 77666 --- [crdb-transactions] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-15T11:35:32.314+03:00  INFO 77666 --- [crdb-transactions] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45c423b3
+2025-08-15T11:35:32.315+03:00  INFO 77666 --- [crdb-transactions] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-15T11:35:32.339+03:00  WARN 77666 --- [crdb-transactions] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-15T11:35:32.340+03:00  WARN 77666 --- [crdb-transactions] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-15T11:35:32.345+03:00  INFO 77666 --- [crdb-transactions] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-15T11:35:32.591+03:00  INFO 77666 --- [crdb-transactions] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T11:35:32.617+03:00  INFO 77666 --- [crdb-transactions] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T11:35:32.707+03:00  WARN 77666 --- [crdb-transactions] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T11:35:32.823+03:00  INFO 77666 --- [crdb-transactions] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8765 (http) with context path '/'
+2025-08-15T11:35:32.828+03:00  INFO 77666 --- [crdb-transactions] [main] c.c.c.CrdbTransactionsApplication        : Started CrdbTransactionsApplication in 1.294 seconds (process running for 1.484)
+2025-08-15T11:36:43.791+03:00  INFO 77666 --- [crdb-transactions] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T11:36:43.802+03:00  INFO 77666 --- [crdb-transactions] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T11:36:43.805+03:00  INFO 77666 --- [crdb-transactions] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T11:36:43.807+03:00  INFO 77666 --- [crdb-transactions] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-15T11:36:43.811+03:00  INFO 77666 --- [crdb-transactions] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-15T11:36:44.714+03:00  INFO 77886 --- [crdb-transactions] [main] c.c.c.CrdbTransactionsApplication        : Starting CrdbTransactionsApplication using Java 17.0.16 with PID 77886 (/Users/giltonteti/Documents/crdb-transactions/target/classes started by giltonteti in /Users/giltonteti/Documents/crdb-transactions)
+2025-08-15T11:36:44.715+03:00  INFO 77886 --- [crdb-transactions] [main] c.c.c.CrdbTransactionsApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T11:36:44.908+03:00  INFO 77886 --- [crdb-transactions] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-15T11:36:44.924+03:00  INFO 77886 --- [crdb-transactions] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2025-08-15T11:36:45.038+03:00  INFO 77886 --- [crdb-transactions] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8765 (http)
+2025-08-15T11:36:45.042+03:00  INFO 77886 --- [crdb-transactions] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-15T11:36:45.042+03:00  INFO 77886 --- [crdb-transactions] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-15T11:36:45.055+03:00  INFO 77886 --- [crdb-transactions] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-15T11:36:45.055+03:00  INFO 77886 --- [crdb-transactions] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 328 ms
+2025-08-15T11:36:45.104+03:00  INFO 77886 --- [crdb-transactions] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-15T11:36:45.126+03:00  INFO 77886 --- [crdb-transactions] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-15T11:36:45.137+03:00  INFO 77886 --- [crdb-transactions] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-15T11:36:45.214+03:00  INFO 77886 --- [crdb-transactions] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-15T11:36:45.222+03:00  INFO 77886 --- [crdb-transactions] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-15T11:36:45.331+03:00  INFO 77886 --- [crdb-transactions] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@12aa519b
+2025-08-15T11:36:45.332+03:00  INFO 77886 --- [crdb-transactions] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-15T11:36:45.355+03:00  WARN 77886 --- [crdb-transactions] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-15T11:36:45.356+03:00  WARN 77886 --- [crdb-transactions] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-15T11:36:45.363+03:00  INFO 77886 --- [crdb-transactions] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-15T11:36:45.595+03:00  INFO 77886 --- [crdb-transactions] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T11:36:45.622+03:00  INFO 77886 --- [crdb-transactions] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T11:36:45.718+03:00  WARN 77886 --- [crdb-transactions] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T11:36:45.828+03:00  INFO 77886 --- [crdb-transactions] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8765 (http) with context path '/'
+2025-08-15T11:36:45.832+03:00  INFO 77886 --- [crdb-transactions] [main] c.c.c.CrdbTransactionsApplication        : Started CrdbTransactionsApplication in 1.257 seconds (process running for 1.429)
+2025-08-15T11:36:52.100+03:00  INFO 77886 --- [crdb-transactions] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T11:36:52.106+03:00  INFO 77886 --- [crdb-transactions] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T11:36:52.109+03:00  INFO 77886 --- [crdb-transactions] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T11:36:52.110+03:00  INFO 77886 --- [crdb-transactions] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-15T11:36:52.113+03:00  INFO 77886 --- [crdb-transactions] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-15T11:47:16.391+03:00  INFO 79801 --- [crdb-transactions] [main] c.c.c.CrdbTransactionsApplication        : Starting CrdbTransactionsApplication using Java 17.0.16 with PID 79801 (/Users/giltonteti/Documents/crdb-transactions/target/classes started by giltonteti in /Users/giltonteti/Documents/crdb-transactions)
+2025-08-15T11:47:16.392+03:00  INFO 79801 --- [crdb-transactions] [main] c.c.c.CrdbTransactionsApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T11:47:16.587+03:00  INFO 79801 --- [crdb-transactions] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-15T11:47:16.602+03:00  INFO 79801 --- [crdb-transactions] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2025-08-15T11:47:16.717+03:00  INFO 79801 --- [crdb-transactions] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8765 (http)
+2025-08-15T11:47:16.722+03:00  INFO 79801 --- [crdb-transactions] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-15T11:47:16.722+03:00  INFO 79801 --- [crdb-transactions] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-15T11:47:16.735+03:00  INFO 79801 --- [crdb-transactions] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-15T11:47:16.736+03:00  INFO 79801 --- [crdb-transactions] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 333 ms
+2025-08-15T11:47:16.784+03:00  INFO 79801 --- [crdb-transactions] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-15T11:47:16.805+03:00  INFO 79801 --- [crdb-transactions] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-15T11:47:16.817+03:00  INFO 79801 --- [crdb-transactions] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-15T11:47:16.897+03:00  INFO 79801 --- [crdb-transactions] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-15T11:47:16.905+03:00  INFO 79801 --- [crdb-transactions] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-15T11:47:17.010+03:00  INFO 79801 --- [crdb-transactions] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c5c20ed
+2025-08-15T11:47:17.011+03:00  INFO 79801 --- [crdb-transactions] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-15T11:47:17.034+03:00  WARN 79801 --- [crdb-transactions] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-15T11:47:17.035+03:00  WARN 79801 --- [crdb-transactions] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-15T11:47:17.041+03:00  INFO 79801 --- [crdb-transactions] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-15T11:47:17.284+03:00  INFO 79801 --- [crdb-transactions] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T11:47:17.309+03:00  INFO 79801 --- [crdb-transactions] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T11:47:17.404+03:00  WARN 79801 --- [crdb-transactions] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T11:47:17.512+03:00  INFO 79801 --- [crdb-transactions] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8765 (http) with context path '/'
+2025-08-15T11:47:17.516+03:00  INFO 79801 --- [crdb-transactions] [main] c.c.c.CrdbTransactionsApplication        : Started CrdbTransactionsApplication in 1.263 seconds (process running for 1.462)
+2025-08-15T11:52:36.315+03:00  INFO 79801 --- [crdb-transactions] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T11:52:36.325+03:00  INFO 79801 --- [crdb-transactions] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T11:52:36.329+03:00  INFO 79801 --- [crdb-transactions] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T11:52:36.332+03:00  INFO 79801 --- [crdb-transactions] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-15T11:52:36.338+03:00  INFO 79801 --- [crdb-transactions] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
