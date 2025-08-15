@@ -8,7 +8,7 @@ services:
       - SPRING_PROFILES_ACTIVE=dev
       - SPRING_DATASOURCE_URL=jdbc:mysql://my-mysql-db:3306/nbc-transactions?useSSL=false&allowPublicKeyRetrieval=true
       - SPRING_DATASOURCE_USERNAME=root
-      - SPRING_DATASOURCE_PASSWORD=rootpass
+      - SPRING_DATASOURCE_PASSWORD=DevOpsRootPass
     volumes:
       - /var/log/nbc_devops/20250815:/app/logs
     networks:
@@ -21,7 +21,7 @@ services:
     container_name: my-mysql-db
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_ROOT_PASSWORD: DevOpsRootPass
       MYSQL_DATABASE: nbc-transactions
       MYSQL_USER: nbcuser
       MYSQL_PASSWORD: nbcpass

@@ -8,11 +8,11 @@
         <version>3.5.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.crdb</groupId>
+    <groupId>com.nbc</groupId>
     <artifactId>nbc-transactions</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>crdb-transactions</name>
-    <description>crdb-transactions</description>
+    <name>nbc-transactions</name>
+    <description>nbc-transactions</description>
     <url/>
     <licenses>
         <license/>

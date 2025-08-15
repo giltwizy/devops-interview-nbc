@@ -155,7 +155,7 @@ src
 
 ## Deployment and Rollback Plan
 - Copy the docker-compose.yml file to your environment
-- run the the docker-compose 'docker compose up -d'
+- run the docker-compose 'docker compose up -d'
 - Monitor the services if they are both running (Web application and Database). If anything odd is happening such that services aren't running you can rollback by docker-compose down command and reach out to the developer
 
 ## Troubleshooting
