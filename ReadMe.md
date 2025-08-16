@@ -162,5 +162,5 @@ src
 
 ## Troubleshooting
 - **Database Connection Issues**: Verify MySQL is running and credentials in `application-local.properties` are correct.
-- **Port Conflicts**: Ensure port 8080 is free or change the port in `application-local.properties` by adding `server.port=<new-port>`.
+- **Port Conflicts**: Ensure port 8765 is free or change the port in `application-local.properties` by adding `server.port=<new-port>`.
 - **Dependency Issues**: Run `mvn clean install` to resolve dependency conflicts.
