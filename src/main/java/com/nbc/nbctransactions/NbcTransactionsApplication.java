@@ -1,4 +1,4 @@
-package com.crdb.nbctransactions;
+package com.nbc.nbctransactions;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

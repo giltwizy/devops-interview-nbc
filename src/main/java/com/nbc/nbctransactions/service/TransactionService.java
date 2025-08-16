@@ -1,9 +1,9 @@
-package com.crdb.nbctransactions.service;
+package com.nbc.nbctransactions.service;
 
-import com.crdb.nbctransactions.dto.TransactionRequest;
-import com.crdb.nbctransactions.dto.TransactionResponse;
-import com.crdb.nbctransactions.entity.Transaction;
-import com.crdb.nbctransactions.repository.TransactionRepository;
+import com.nbc.nbctransactions.dto.TransactionRequest;
+import com.nbc.nbctransactions.dto.TransactionResponse;
+import com.nbc.nbctransactions.entity.Transaction;
+import com.nbc.nbctransactions.repository.TransactionRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

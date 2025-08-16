@@ -1,4 +1,4 @@
-package com.crdb.nbctransactions.dto;
+package com.nbc.nbctransactions.dto;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;

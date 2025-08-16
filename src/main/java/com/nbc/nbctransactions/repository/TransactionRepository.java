@@ -1,6 +1,6 @@
-package com.crdb.nbctransactions.repository;
+package com.nbc.nbctransactions.repository;
 
-import com.crdb.nbctransactions.entity.Transaction;
+import com.nbc.nbctransactions.entity.Transaction;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

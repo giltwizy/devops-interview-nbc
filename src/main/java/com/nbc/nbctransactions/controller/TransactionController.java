@@ -1,8 +1,9 @@
-package com.crdb.nbctransactions.controller;
+package com.nbc.nbctransactions.controller;
 
-import com.crdb.nbctransactions.dto.TransactionRequest;
-import com.crdb.nbctransactions.dto.TransactionResponse;
-import com.crdb.nbctransactions.service.TransactionService;
+import com.nbc.nbctransactions.dto.TransactionRequest;
+import com.nbc.nbctransactions.dto.TransactionResponse;
+import com.nbc.nbctransactions.service.TransactionService;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +21,7 @@ public class TransactionController {
     }
 
     @PostMapping("transactions")
-    public TransactionResponse createTransaction(@RequestBody TransactionRequest transactionRequest) {
+    public TransactionResponse createTransaction(@Valid @RequestBody TransactionRequest transactionRequest) {
         return transactionService.createTransaction(transactionRequest);
     }
 }

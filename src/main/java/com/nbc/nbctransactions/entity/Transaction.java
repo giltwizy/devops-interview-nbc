@@ -1,4 +1,4 @@
-package com.crdb.nbctransactions.entity;
+package com.nbc.nbctransactions.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
