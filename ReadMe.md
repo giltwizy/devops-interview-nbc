@@ -43,23 +43,25 @@ This is a Spring Boot application designed to handle banking transactions for NB
 src
 └── main
     ├── java
-    │   └── com.nbcbank
-    │       ├── NbcBankApplication.java
-    │       ├── config
-    │       │   └── DatabaseConfig.java
-    │       ├── entity
-    │       │   └── Transaction.java
-    │       ├── repository
-    │       │   └── TransactionRepository.java
-    │       ├── service
-    │       │   └── TransactionService.java
-    │       ├── controller
-    │       │   └── TransactionController.java
-    │       └── dto
-    │           ├── TransactionRequest.java
-    │           └── TransactionResponse.java
+    │   └── com
+    │       └── nbc
+    │           └── nbctransactions
+    │               ├── NbcBankApplication.java
+    │               ├── entity
+    │               │   └── Transaction.java
+    │               ├── repository
+    │               │   └── TransactionRepository.java
+    │               ├── service
+    │               │   └── TransactionService.java
+    │               ├── controller
+    │               │   └── TransactionController.java
+    │               └── dto
+    │                   ├── TransactionRequest.java
+    │                   └── TransactionResponse.java
     └── resources
-        └── application.properties
+        ├── application.properties
+        ├── application-dev.properties
+        └── application-local.properties
 ```
 
 ## Setup Instructions
@@ -67,7 +69,7 @@ src
 1. **Clone the Repository**
    ```bash
    git clone <repository-url>
-   cd nbc-bank-transaction
+   cd devops-interview-nbc
    ```
 
 2. **Set Up MySQL Database**
@@ -88,7 +90,7 @@ src
       ```
 
 3. **Configure Application Properties**
-    - Open `src/main/resources/application.properties`
+    - Open `src/main/resources/application-local.properties`
     - Update the MySQL credentials:
       ```properties
       spring.datasource.url=jdbc:mysql://localhost:3306/nbc_bank?useSSL=false&serverTimezone=UTC
@@ -151,7 +153,7 @@ src
 - The application uses Spring Data JPA for database operations.
 - The `reference` field in the transactions table is unique to prevent duplicate transactions.
 - Ensure your MySQL server is running before starting the application.
-- The application logs SQL queries for debugging (configured in `application.properties`).
+- The application logs SQL queries for debugging (configured in `application-local.properties`).
 
 ## Deployment and Rollback Plan
 - Copy the docker-compose.yml file to your environment
@@ -159,6 +161,6 @@ src
 - Monitor the services if they are both running (Web application and Database). If anything odd is happening such that services aren't running you can rollback by docker-compose down command and reach out to the developer
 
 ## Troubleshooting
-- **Database Connection Issues**: Verify MySQL is running and credentials in `application.properties` are correct.
-- **Port Conflicts**: Ensure port 8080 is free or change the port in `application.properties` by adding `server.port=<new-port>`.
+- **Database Connection Issues**: Verify MySQL is running and credentials in `application-local.properties` are correct.
+- **Port Conflicts**: Ensure port 8080 is free or change the port in `application-local.properties` by adding `server.port=<new-port>`.
 - **Dependency Issues**: Run `mvn clean install` to resolve dependency conflicts.
